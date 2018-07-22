@@ -70,10 +70,8 @@ function createRock(x) {
 }
 
 function endGame() {
-  var rocks = document.querySelectorAll('.rock');
-  
-  for (i = 0; i < rocks.length; i++) {
-    rocks[i].remove();
+  for (let rock of ROCKS) {
+    rock.remove()
   }
   
   ROCKS.length = 0;
